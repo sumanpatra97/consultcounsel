@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SCAN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h4 class="pox">SCAN THIS QR TO PAY DIRECTLY</h4>
+                <h4 class="pox">Accroding to your plan:Amount-{{amount}}</h4>
+                <h4 class="pox">UPIID-9337569167@ybl</h4>
+                <img src="{% static 'paytm.jpg'%}" width="100%" height="80%"><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

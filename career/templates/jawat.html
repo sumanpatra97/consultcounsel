@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>JAHWAT</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'jawat.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Jahwat Naz</h3>
+                <h3 class="pox">Agile,SAP ILM/ Basis Developer</h3>
+                <h3 class="pox">jahwat.mech@gmail.com</h3>
+                <p class="kk pox">
+                    Am currently working in an MNC i.e Accenture. I have had the experience of being a part of team where requirements were given managers.
+                    Since One year I Have been working directly with the client who give requirements over a call and together we brainstorm to come up with a solution. In my current role there is no hierarchy of managers or team leads.
+                    I even work with Other organisation people i.e TCS directly on a daily basis.
+                    I can even advice people for a smooth transformation from Waterfall to AGILE.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

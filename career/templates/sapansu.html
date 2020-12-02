@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SWAPANSU</title>
+</head>
+<body>
+     {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'swapnasu.jpg'%}" width="100%" height="34%"><br>
+                <h3 class="pox">Swopnansu Sekhar Parida</h3>
+                <h3 class="pox">Solobackpaker </h3>
+                <h3 class="pox">swopnansusekharparida0928</h3>
+                <h3 class="pox">@gmail.com</h3>
+                <p class="kk pox">
+                    Background : Electrical Engineering from Vssut , currently pursuing MBA in oil and gas management in Upes Dehradun
+                    I luv to travel to new places
+                    And iam here to convert my passion into proffesion 🙂
+                    I luv to travel in lowest budget and have covered almost all North India famous spots like Delhi ,Manali , Kasol , Dalhousie , Dehradun ,Sankri, kedarkantha , Rishikesh, Haridwar...
+                    Also I have visited Goa, Bombay, and many other places in South India.
+                    Instagram :mushafir_hoon_yaroon
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

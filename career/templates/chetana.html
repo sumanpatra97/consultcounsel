@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>CHETNA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'chetana.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Chetna Mohanta</h3>
+                <h3 class="pox">Beauty blogger</h3>
+                <h3 class="pox">chetnamohanta78@gmail.com</h3>
+                <p class="kk pox">
+                    Hey! I am Chetna Mohanta, a software engineer by profession and I pursue make-up as a hobby. Basically self learnt and had attended  an online make-up workshop. Love experimenting with colours. Recently started a beauty blogging page on Instagram as well. Do drop by so that I can pass on my knowledge on to you on this topic.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

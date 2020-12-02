@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>RESULT</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <br><br><br>
+        <h3 class="pox kk">Thank you for applying.we will connect with you soon</h3>
+        <a href="/"><h4 class="pox">Home page</h4></a>
+    </div>
+    {% endblock content %}
+</body>
+</html>

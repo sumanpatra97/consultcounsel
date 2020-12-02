@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>MANAN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'manan.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Manan Agrwal</h3>
+                <h3 class="pox">Professional Guitarist</h3>
+                <h3 class="pox">manannagarwal@gmail.com</h3>
+                <p class="kk pox">
+                    Hi,I am a professional guitarist and a solo artist writing music based on famous movies/stories lasting around 3-5 minutes. My music takes the listener through a myriad of emotions on the basis of the musical story, making them experience scenes unfold in front of their eyes.
+                    Link :<a href="https://youtu.be/YNAglkqncos">Youtube channel</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

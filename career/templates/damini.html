@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DAMINI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'Damini.jpg'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Damini</h3>
+                <h3 class="pox">Content,Dance, fashion and Lifestyle expert</h3>
+                <p class="kk pox">
+                    I am a simple minded girl, with big dreams.
+                    For me life has always been about experimenting and I strongly believe that one is never too old to persue his/her passion.
+                    I always wanted to blog but there were too many hurdles. Finally this pandemic I decided if is time to bring the best out of me.
+                    Hence I started creating contents online.
+                    My insta page is all about fashion, dance and lifestyle.
+                    Through my channel I want to entertain people and bring smile on their face and at the same time make sure my followers are always in Vogue.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

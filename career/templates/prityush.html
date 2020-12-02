@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PRITYUSH KUMAR SAHU</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'piyush.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Prityush Kumar Sahu</h3>
+                <h3 class="pox">Environmentalist & Photographer</h3>
+                <h3 class="pox">prityushsahu96@gmail.com</h3>
+                <p class="kk pox">
+                    Hey...!! This is Prityush here... I'm an Environmentalist... I did my post graduation in Environmental Engineering from VNIT Nagpur... Apart from this I'm a photographer and also a travel planner... I shoot Streets, Nature and Portraits mostly...
+                    I always love to help people with the knowledge I have... You can ask me anything from my domain, I'd love to answer them.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

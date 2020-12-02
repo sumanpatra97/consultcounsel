@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ABOUT/SUMAN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-2 pox"><br>
+                <img src="{% static 'suman.jpg'%}" width="300" height="300">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8">
+                <h3 class="pox">Software developer</h3>
+                <h4 class="pox">Employee at wipro</h4>
+                <p class="kk pox">
+                    Suman is from Jajapur, Odisha and is currently staying at Bangalore.He is a software developer by profession,
+                    but he loves to solve real life problems. He started this company with his colleague Bhanu.
+                    He has been doing different projects.
+                    Being from a  middle-class back ground he has seen many problems regarding guidance.So he wanted to help those who required mentoring.
+                    Please do contact him for any help as he is always ready for supporting.Details are given below.
+                </p>
+                <p class="kk pox">mailid:sumanpatra68@gmail.com Mobile no-9337569167</p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

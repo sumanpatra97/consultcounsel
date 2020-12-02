@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>RISPA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'rispa.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Rispa Panda</h3>
+                <h3 class="pox">Odissi, Hip-hop Dancer & Actor</h3>
+                <h3 class="pox">rispapanda@gmail.com</h3>
+                <p class="kk pox">
+                    I have been working as an IT Professional for 3 years now. Acting and dance have always been my passion and I have been focusing on training lately to take them professionally.
+                    So i am trained in odissi for more than 7 years in my childhood and currently am again getting trained from the scratch in odissi and also am getting trained in hiphop, and few other styles.
+                    As per acting, i have done many theatres during my college days and got trained under NSD passout teacher and now recently i also got trained under anupam kher acting school- actor's prepares.
+                    I strongly believe if you truly want to do something with your passion you can always have ways to do them even if you have a full time job. Sheer determination, focus , hardwork and proper guidance are the pillars to that.
+                    I hope i will be able to guide people who are looking forward to take acting or dance as passion or hobby or professionally.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

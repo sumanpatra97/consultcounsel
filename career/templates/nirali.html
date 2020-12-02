@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>NIRALI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'Nirali.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Nirali Shroff</h3>
+                <h3 class="pox">Psychologist & HR professional</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    This is Nirali Shroff from Mumbai. I'm a passionate HR professional and the Founder of The HR Suite. With a Master's in Industrial Psychology and half a decade of experience in the Human Resources industry, I specialise in an array of HR services such as recruitment, resume writing, interview coaching, career guidance, psychometric testing and more! I am a people's person, just like my profession demands, and I'd love to mentor and guide anybody who is enthusiastic to learn anything and everything about Human Resources.
+                </p><br><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>JAYESH</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'Jayesh_Panigrahi.jpg'%}" width="100%" height="38%"><br>
+                <h3 class="pox">Jayesh Panigrahi</h3>
+                <h3 class="pox">Management Graduate at IIM Sirmaur.</h3>
+                <h3 class="pox">jayeshburla@gmail.com</h3>
+                <p class="kk pox">
+                    Management Graduate at IIM Sirmaur.
+                    Founding Team Member at Surwahi Social Kanha
+                    Brief Stint with Accenture.
+                    Guest Lecturer at KIIT International School.
+                    Electrical Engineer from VSSUT.
+                    I am interested for the role of career counselling and personal conselling. Please do let me know if anything else is needed from my end
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

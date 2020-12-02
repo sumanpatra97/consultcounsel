@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ABOUT/BHANU</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row"><br>
+            <div class="col-sm-2 pox"><img src="{% static 'BHANU.JPG'%}" width="300" height="300"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8">
+                <h3 class="pox">System engineer and Actor</h3>
+                <h4 class="pox">Employee at Infosys</h4>
+                <p class="kk pox">Bhanu is from Bhadrak Odisha but currently staying at Telangana and has done his engineering from Odisha's reputed college VSSUT.
+                    He is currently a software engineer at Infosys Hyderabad with 2+ years of experience.He manages events team in Infosys as host/anchor and performs across DCs of Infosys. He administers canteen operations for about 25k employees in Infosys Hyderabad. He also serves in CSR of Infosys.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="kk pox">
+                    He is renowned theatre Actor and play director at Hyderabad and active artist in BookMyShow.
+                    He has taken Industrial training from NTPC & Aditya Birla alongwith software training from IIT Bombay and Infosys Mysore.
+                    He was awarded with national adventure camp certificate from government of HP, 'C' Certificate in NCC and Rajya puraskar in Scouting.
+                    He received All India merit scholarship for his outstanding performance in High school and has many accolades added to his name.
+                    He is situation writer/blogger in WordPress, singer,story teller and youtuber.
+                    He likes to play cricket, football, tennis and many other sports hence a keen sports enthusiast.
+                    He also likes to do interior design/decoration and gardening.
+                </p>
+                <p class="kk pox">mailid:bhanup997@gmail.com Mobile no-7205900207</p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

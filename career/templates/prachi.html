@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PRACHI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'prachii.JPG'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Prachi Agrwal</h3>
+                <h3 class="pox">Asic verification engineer</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    I have been working in the VLSI DOMAIN as an ASIC VERIFICATION ENGINEER since July 2018.I have an expertise in the Verification languages like UVM,System Verilog and certain protocols like CXL,PCIe.
+                    Entering in VLSI Domain is really difficult but if you know certain things beforehand,it will be really helpful to prepare for the interviews.if you need any guidance,book session with me.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ABHAY</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'abhya.JPG'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Abhay</h3>
+                <h3 class="pox">Freelance Guitarist & Electronic music producer</h3>
+                <h3 class="pox">akp.mpofficial@gmail.com</h3>
+                <p class="kk pox">
+                    Hello I'm Abhay, I am a freelance guitarist and Electronic Music producer, I am a native of Sambalpur, Odisha.
+                    I work as a guitar instructor at Torrins India. I also give private lessons to students over skype and zoom.
+                    I finished my diploma of Electronic Music Production at KM Music College, Chennai, in the year 2018.
+                    I specialize in genres like Blues, Rock, Post Rock, Metal, Progressive Rock and Neoclassical.
+                    I also give lessons on Western Music Theory.
+                    I have a teaching experience of over 4 years, I worked with several bands and solo artists for both own compositions and recreative productions.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

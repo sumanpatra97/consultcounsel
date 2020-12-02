@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DARSHINI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'darshini.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Darshini Nayak</h3>
+                <h3 class="pox">Artist & Poetess</h3>
+                <h3 class="pox">darshininayak95@gmail.com</h3>
+                <p class="kk pox">
+                    Truth be told, Darshini wears several hats. The kind who would strike highly engaging awkward conversations to lighten up the room with your laughter & hers. No not a comic, rather a poetess who pens down her free writings on instagram occassionally.
+                    She loves cooking poetry in her head, mostly personalized & women centric. Darshini lives with her cats, neatly organized novels & an overpacked colourful wardrobe. You can also find her sketching occassionally and baking like it's Christmas.
+                    When one thinks of Darshini, one thinks of sunflower. 🌻
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

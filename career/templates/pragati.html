@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PRAGATI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'pragati.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Pragati Mahapatra</h3>
+                <h3 class="pox">Content Curator and a Lifestyle Blogger</h3>
+                <h3 class="pox">notsocordial@gmail.com</h3>
+                <p class="kk pox">
+                    I am Pragati Mahapatra. A Content Curator and a Lifestyle Blogger.
+                    I express myself best through writing and inspire people to do the same, express. I have been curating content for several years now and run a blog called NotSoCordial.
+                    It has been a wonderful journey so far. Along the way, if you need help, do stop by!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

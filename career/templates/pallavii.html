@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>AAYUSHI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'pallavii.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Pallavi Priya</h3>
+                <h3 class="pox">Social Entrepreneur & Digital Influencer</h3>
+                <h3 class="pox">soypallavipriya@gmail.com</h3>
+                <p class="kk pox">
+                    Pallavi is a Social Entrepreneur and Digital Influencer associated with various projects that help change society.
+                    She is the founder of a nonprofit initiative 'Cause for Celebration' which aims to serve, empower and uplift the underprivileged and lower income communities.
+                    She is a Youth for SDG and runs a digital initiative 'Eco-Friendly World' which works in line with SDG goals on climate action, spreads awareness on environment protection and encourages individuals to adopt sustainable living.
+                    She has 10+ years of volunteering, planning & event organizing, ideation session experience into the social sector.
+                    The cause very close to her heart is women safety and child development.
+                    Her work has been recognized by leading newspapers and The Better India.
+                    She strongly believes if we are capable of something, we should share it with the less fortunate of the world.
+                    She keeps upskilling with the latest technologies and is an Oracle DBA expert and has approx. 8 years of IT industry experience.
+                    To know more about Pallavi and her work, please connect on below handles.
+                    LinkedIn: https://www.linkedin.com/in/pallavi-priya-6b6540105/
+                    Twitter: https://twitter.com/pallavipriya_
+                    Facebook: https://www.facebook.com/acause4celebration/
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

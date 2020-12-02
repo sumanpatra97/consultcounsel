@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ANUKTA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'anukta.jpg'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Anukta Mishra</h3>
+                <h3 class="pox">Actor, Dancer & Content Creator</h3>
+                <h3 class="pox">anukta93mishra@gmail.com</h3>
+                <p class="kk pox">
+                    If I had to say something about me, I would say I am passionate about dancing, acting and trying to bud my way through content creation.
+                    I started learning classical dance since the time I can remember, I have been trained in it as well. I have been fortunate enough to be able to showcase my talent at multiple platforms and grateful for all the opportunities.
+                    Apart from dancing, I enjoy acting as well. The interest started when I joined my bachelor's degree. The environment was very nurturing and I thoroughly enjoyed my short experience with acting. I have not learnt acting but surely have performed, with just a few awards.
+                    I am honoured that you considered me for this.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>HARDEEK</title>
+</head>
+<body>
+{% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'hardeek.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Hardeek Kumar</h3>
+                <h3 class="pox">SAP & ABAP Developer</h3>
+                <h3 class="pox">khardeek@gmail.com</h3>
+                <p class="kk pox">
+                    I am Hardeek Kumar. I work at Infosys as a full time software developer. I have been trained in SAP ABAP with a working knowledge of OOPS ABAP, Reports, etc. I have also received training on Python Basics and Networking, featuring development and management of RESTful APIs and currently working on an Automation project using the same.
+                </p>
+            </div>
+        </div>
+    </div>
+       {% endblock content %}
+</body>
+</html>

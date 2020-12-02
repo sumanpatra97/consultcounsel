@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SOUMAV</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'soumav.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Soumav Prakash</h3>
+                <h3 class="pox">Data Engineer & Product Integration</h3>
+                <h3 class="pox">prakashsoumav@gmail.com</h3>
+                <p class="kk pox">
+                    Associate Software Engineer- Accenture:
+                    I started with Accenture in May 2017, where I had responsibility of automating tests through selenium! Meanwhile, i started work on building ETL pipelines alongside the usual work. Then, got the opportunity to work on spark and Hadoop based applications for the rest of my stint!
+                    Product Integrations-Happay:
+                    In January, 2019, I joined Happay(Travel & Expense Management Product) where i took care of all the Product Integrations. These basically were revolved around  building data pipelines for the expense and travel data.Along with that, i also helped in Product features and implementation.The role also got me exposure to clients and involved travel as well!
+                    Data Engineer-Quaero:
+                    I joined Quaero(a US based Marketing company) in July , 2020. We have a Marketing Product known as CDP. The role here is to build scalable data pipelines based on Spark and Hadoop Architecture in order to support the Marketing data platform. I also take care of the Airflow infrastructure here. along with the above tasks, I carry out POCs for new features and accordingly testing the performance. The tech stack i work on here involves Python, Scala,Java, Spark,Hadoop,Hive, SQL server, Airflow,Docker, Kubernetes.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

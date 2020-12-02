@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>AYUSHI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'Ayushi.jpg'%}" width="100%" height="38%"><br>
+                <h3 class="pox">Ayushi Dash</h3>
+                <h3 class="pox">IT Consultant & Dancer</h3>
+                <h3 class="pox">ayushidash.ad@gmail.com</h3>
+                <p class="kk pox">
+                    I am currently working at Deloitte USI Consulting. It's been 2 years to the journey. Apart from being an IT being, I am a dancer. I try to make time from the busy schedule to continue with my learnings and practice. I have realized, it is not that difficult to manage stuff if you are really interested in something and really passionate about it. So feel free to reach out if you want to have a chit chat with me regarding dance, music, or anything that is confusing you regarding your career as a dancer or anything else :)
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

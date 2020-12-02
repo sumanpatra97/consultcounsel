@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SOUMYASHREE</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'ping.png'%}" width="100%" height="32%"><br>
+                <h3 class="pox">Soumyashree Panda</h3>
+                <h3 class="pox">sketch artist and craft artist</h3>
+                <h3 class="pox">soumyashreepanda1771996</h3>
+                <h3 class="pox">@gmail.com</h3>
+                <p class="kk pox">
+                    I am Soumyashree Panda,currently working at TCS as a Software Analyst.Well Art is something I really go crazy about since my childhood.So here I am at Consult & Counsel as a mentor for 'Art and Sketch'.I will guide you and share my knowledge that involves various sketching techniques, types of drawing papers, colours and their use, best brushes for colouring, pencils for sketching, sketching tools etc. if you have any queries regarding craft I will help you with that also.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

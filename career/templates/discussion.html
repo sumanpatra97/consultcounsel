@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>FORUM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="kk">Post your queries from any topic which you want to be clarified by us, so that it can be replied by our mentors who are proficient in that particular area...
+                    You can also give suitable reply to the question by clicking on it by becoming a volunteer...
+                    Everything in this section is Free...</p>
+                        <h4 class="kk">ASK YOUR QUESTION,WE WOULD LOVE TO HELP YOU</h4>
+                        <form action="redirect" method="POST" class="form-group">
+                            {%csrf_token%}
+                            {%for i in form%}
+                            <h3 class="kk">{{i}}</h3>
+                            {%endfor%}
+                            <h4 class="kk">Enter your email in the box to get your answer in mail</h4>
+                            <button type="submit" class="btn btn-success pox">SUBMIT</button>
+                        </form>
+                <p class="kk">ALL QUESTIONS</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                {%for i in v%}
+                <a href="/reply/{{i.pk}}/"><h3 class="kk">{{i.question}}</h3></a>
+                {% endfor %}
+            </div><br>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SHRADHA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'shradha.jpeg'%}" width="100%" height="20%"><br>
+                <h3 class=pox>Shradharani Patra</h3>
+                <h3 class="pox">Content writer and personality development trainer</h3>
+                <h3 class="pox">199630shraddha@gmail.com</h3>
+                <p class="kk pox">
+                    How do I start a blog? What caption should go with my Instagram post? I have a thought to share, but how do I put it out in words? How do I make my content appealing? How do I write a blog post?
+                    How do I present myself in a Job Interview? How do I prepare for a speech?
+                    You might be having thousands of questions like these. But all you need is a little grooming!
+                    Hi, I am Shraddha. A Personality Development Trainer and an Experienced Content Writer having expertise in Corporate Website Content, Blogs and Social Media Handles.
+                    I am here to help you develop a personality that turns heads and make your content posh.
+                    Since the world has gone digital, Personality & Content holds a major stake in how you want to showcase yourself or your business/passion to your audience.
+                    Believe it or not, it is one of those first impressions you make on your audience.
+                    Sign up for some valuable addition to your skills. You and your content should shine like 24 carat Gold!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

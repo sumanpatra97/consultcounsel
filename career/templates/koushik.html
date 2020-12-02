@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>NEELAKANTAM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'neela1.jpeg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Neelaantam Koushik</h3>
+                <h3 class="pox">Sport expert</h3>
+                <h3 class="pox">koushikneelakantam@gmail.com</h3>
+                <p class="kk pox">
+                    This is a small town guy who just loves to spend his life playing all kinds of sports especially Cricket, which is my first love.
+                    I would like to motivate the next gen kids in whichever way possible to take up outdoor physical sports.
+                    I was playing some sport or other wherever I am. I was the school cricket team captain, captained my College Volleyball team in my Undergrad, was a part of Infosys MySore DC volleyball team and currently playing for the Infosys Hyderabad cricket team.
+                    I love to take care of my body as it helps me in performing well in the games I play.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

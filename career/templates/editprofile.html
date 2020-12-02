@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>EDITPROFILE</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3>Edit profile</h3>
+                <form  method="POST" class="form-group" action="">
+                    {%csrf_token%}
+                    {% for t in data%}
+                    <h5 class="kk">{{t.label_tag}} {{t}}</h5><br>
+                    {% endfor %}
+                    <button class="btn btn-success" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

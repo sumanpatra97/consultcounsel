@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SRIMAA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'srima.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Srimaa Barata</h3>
+                <h3 class="pox">Architect and Model</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Srimaa Barata is an Architect by profession and has been a trainee under famous Arcitect Hafiz Contractor.
+                    Apart from the above she has been involved in modelling at Mumbai.
+                    She has title of Mrs Vassaunt under her name and dreams to get crowned some day...
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

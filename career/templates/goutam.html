@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>GOUTAM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'goutam.jpg'%}" width="100%" height="15%"><br>
+                <h3 class="pox">Goutam Mishra</h3>
+                <h3 class="pox">Expert in quantum physics</h3>
+                <h3 class="pox">goutammisra@gmail.com</h3>
+                <p class="kk pox">
+                    I am currently pursuing my masters from Indian Institute of Space science and Technology-Thiruvananthapuram, in the field of Solid-State Technology.
+                    The field particularly focuses on physics of solid-state devices like thin film transistors and various challenges to design next generation devices.
+                    Since the channel length of transistors have kept on decreasing in order to fit more transistors in a chip, which results more processing power, we have reached a bottleneck where the quantum effects tend to dominate.
+                    Hence there is a requirement of engineers with solid knowledge of quantum mechanics and solid-state physics in order to overcome this effect and design new devices.
+                    My current master’s thesis though focusses on completely different field, i.e. the quantum information theory and quantum optical communications. These are relatively new fields, which are closely related to quantum computers.
+                    Together these 3 form the basis of quantum technologies, where we exploit the fundamental laws of nature as described by quantum mechanics in order make next gen computers.
+                    Quantum optical communications form an exciting new field because using concepts of quantum optics we can create secured communications which help us detect the presence of eavesdropper in a definite way.
+                    This is in contrast to classical cryptography which relies on impossibility of classical computers to decode a secured message based on computation power alone.
+                    Quantum cryptography, which forms integral part of quantum optical communications however relies of fundamental laws of nature to prevent any possible eavesdropping by definitely showing the presence of eavesdropper.
+                    I have done by Bachelors in Electronics and Telecommunication engineering from VSSUT Burla.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

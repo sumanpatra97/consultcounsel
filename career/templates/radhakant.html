@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>RADHAKANT</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'radhakant.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Radhakant Kar</h3>
+                <h3 class="pox">Singer</h3>
+                <h3 class="pox">karradhakanta8@gmail.com</h3>
+                <p class="kk pox">
+                    Myself Radhakanta Kar, a musician, trained in Odissi Vocal Music for 13 years and Hindustani classical music for 2years.
+                    I have knowledge about Music production, studio recording, mixing and mastering. I have around 1k followers in instagram and 600 subscribers in Youtube till now.
+                    I have been doing music since 2003 and I have sound knowledge on Alankaar, Raag etc. My favourite genre in music is sufi and soft romantic.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

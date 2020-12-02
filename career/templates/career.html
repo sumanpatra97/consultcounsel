@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>CC</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="pox">Digital market expert</h3>
+                <p class="kk pox">
+                    we are hiring a candidate who has experience of one year in digital marketing.
+                </p>
+                <p class="pox kk">Speciality: Blogging, Content Marketing, Online Marketing</p>
+                <p class="pox kk">job code:CC0001</p>
+                <div class="pox">
+                <a href="CC001"><button class="btn btn-dark">Apply now</button></p></a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="pox">Customer executive</h3>
+                <p class="kk pox">
+                    we are hiring a candidate who has experience of one year in customer support.
+                </p>
+                <p class="kk pox">Speciality: Excellent communication skill</p>
+                <p class="kk pox">job code:CC0002</p>
+                <div class="pox">
+                <a href="CC002"><button class="btn btn-dark">Apply now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

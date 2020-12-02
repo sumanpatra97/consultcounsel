@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>MENTORS</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <h2 class="pox">&#9829;OUR MENTORS&#9829;</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="{% static 'sumant1.jpg'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Sumant</h3>
+                <h3 class="kk">Fashion blogger</h3>
+                <a href="sumant"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'pragati.jpg'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Pragati</h3></h3>
+                <h3 class="kk">Content Curator and a Lifestyle Blogger</h3>
+                <a href="pragati"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'abhijit.png'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Abhijit</h3>
+                <h3 class="kk">Fitness coach & Blogger</h3>
+                <a href="abhijit"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'Damini.jpg'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Damini</h3>
+                <h3 class="kk">Dance, fashion & Lifestyle expert</h3>
+                <a href="damini"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'saloni.jpg'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Saloni</h3>
+                <h3 class="kk">Article Writer & Blogger</h3>
+                <a href="saloni"><h4>Read more</h4></a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

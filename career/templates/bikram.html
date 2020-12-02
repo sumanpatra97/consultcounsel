@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>BIKRAM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'bikram.jpg'%}" width="100%" height="50%"><br>
+                <h3 class="pox">Bikram Meher</h3>
+                <h3 class="pox">Doctor</h3>
+                <h3 class="pox">bikrammeher424@gmail.com</h3>
+                <p class="kk pox">
+                    Myself,Bikram,studying medical in SCB college.I am from khariar.i love to help the student particularly in the field of preparation of medical exam.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>CHARITY</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h4 class="pox">DONATE</h4>
+                <img src="{% static 'charityy.jpg'%}" height="auto%" width="100%">
+                <h3 class="kk">As we consult and counsel people from diverse backgrounds, we find some people find it very difficult to afford even basic necessities due to deficit in monetary aspects.
+                Hence we have taken up this initiative to help such people in any possible way by saving their dreams from being shattered.
+                Kindly donate whatever you feel like giving to such people to help them pursue their goals for which we will be grateful.</h3><br>
+                <div class="pox"><a href="gonow" class="mox pox"><button class="btn btn-dark">CLICK HERE TO DONATE</button></a></div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

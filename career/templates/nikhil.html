@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>NIKHIL</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'nikhil.jpg'%}" width="100%" height="28%"><br>
+                <h3 class="pox">Nikhil</h3>
+                <h3 class="pox">MTech in Mechatronics and automation</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    PROJECT:
+                    Detection of heart diseases from ECG by using CNN
+                    Guide : Dr. Srikanth Rao. The objective is to detect heart diseases by extracting data from
+                    ECG using openCV and build a model based on Convolution Neural Network (CNN). Home Automation By using NI DAQ and LabView (2019)
+                    Guide : Dr. Gangadharan K. V. Home automation project was accomplished by using LabView
+                    Development environment and NI DAQ.
+                    Line Following Robot (2019)
+                    Guide: Dr. Gangadharan K. V. With the help of IR sensor we had controlled a four wheeled
+                    robot on a pre defined path. Design and development of Semi-automatic soldering machines for industrial capacitors (2016 - 2017)
+                    Guide: Mr. Desai Abhasysinghraje. To replace skilled labour by unskilled worker. By making the whole process of soldering automatic, we had
+                    reduced the process time and ultimately, cost reduction was there with very less error involved.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

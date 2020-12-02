@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SIDHI SATPATHY</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'sidhi.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Sidhi Satpathy</h3>
+                <h3 class="pox">Application Development Analyst</h3>
+                <h3 class="pox">sidhi.satapathy04@gmail.com</h3>
+                <p class="kk pox">
+                    Currently, I am working as an application development analyst with Accenture where I am a contractor in British telecom. I can help you understand how to acquire different skill set and automate various things around. My basic skill is selenium with Java.
+                    Apart from this, I love dancing, writing and playing basketball. I was very young when I started learning odissi as a special activity and basketball as a lead up activity in my school.
+                    I could also provide you some knowledge on content writing as well as I have written few blogs in my site thyessence.wix.com.Bloging is my favourite pass time as it helps me pen down my feelings. I could also provide you knowledge about Various MUN i.e Model United Nations and how does it function and how should you take up countries and do your research.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

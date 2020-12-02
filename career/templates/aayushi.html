@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>AAYUSHI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'aayushi.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Ayushi</h3>
+                <h3 class="pox">Athlete,Dancer & Rugby player</h3>
+                <h3 class="pox">aayushid.19@gmail.com</h3>
+                <p class="kk pox">
+                    I am Aayushi. AAAA-YUSHI basically. I am a Chemical Engineer living in Mumbai, Maharashtra.
+                    I am a trained Dancer and an Athlete, A Rugby player ( Rare in India but yayee!!) I have represented my state, Country, at various events in both Dance and Rugby.
+                    I also work for an NGO called Leader's for change where i teach kids aged between 7-9. All the kids are absolute sweethearts.
+                    I am a big big animal lover. Rather than bars, i love hoping to dog cafes and spend best of times with pups.
+                    Usually people misinterpret me to be a 14 year old kid trying to search for her parents in the crowd. I am tiny.
+                    But not too tiny to have a big impact. I love traveling, Dancing in the rain, Listening to loud music.
+                    You'll find me doing splits here and there and basically everywhere. With my very different ambitions and dreams, i want to always balance my career along with my extra curriculars.
+                    I have always been the star kid, hence i always have an urge in me to make my parents feel proud of what i do or wherever i go.
+                    Will have a great time interacting with you guys, incase you have any questions related to Dance, Rugby, Sports,  drop me a text!
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

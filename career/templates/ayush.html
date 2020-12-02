@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>AYUSH</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'ayush.jpg'%}" width="100%" height="36%"><br>
+                <h3 class="pox">Ayush Raj</h3>
+                <h3 class="pox">Actor & Beatboxer</h3>
+                <h3 class="pox">ayushbabul2001@gmail.com</h3>
+                <p class="kk pox">
+                    I have been acting since last 8 years and now I'm a member of the dramatics club of VSSUT and I'm the asst coordinator of the dramatics society as well.
+                    Currently I have started a YouTube channel in the name Pi RANK , where I shoot pranks and funny videos.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

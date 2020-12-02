@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SMITA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'ping.png'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Smita Pani</h3>
+                <h3 class="pox">Cloud Operations Expert</h3>
+                <h3 class="pox">sprajnapani07@gmail.com</h3>
+                <p class="kk pox">
+                    As a part of the Cloud operations team, I handle the cloud operations for SAP servers and Server admin operations for the on-premise Linux and Windows Application Servers.
+                    In addition to that, we also handle the cloud Operations for the applications which were recently migrated to the cloud(AWS Platform) using basic services such as Ec2, S3, IAM, Autoscaling, Security Groups, Load-balancing, Cloud-watch, SNS, VPC etc hosted across various regions.
+                    I also have the basic knowledge working on the Version control tool i.e. Git and CI/CD tools like Jenkins and will be continuing to extend my knowledge. I have been working for various clients like Airbus, Mondelez, Luxotica , which gave me a good experience of handling various types of customers and dealing with SLA timings and escalation process,
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

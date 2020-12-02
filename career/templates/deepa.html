@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DEEPA</title>
+</head>
+<body>
+        {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'deepa.jpg'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Deepa Das</h3>
+                <h3 class="pox">Mechanical Maintenance Engineer</h3>
+                <h3 class="pox">deepadas7070@gmail.com</h3>
+                <p class="kk pox">
+                    You can get the max out of your engineering studies, if you get to do it in person.
+                    I am a mechanical engineer and currently I am working as Assistant Manager at Vedanta ltd. (Bharat aluminium Company limited). I am a Mechanical maintenance engineer over there. I attend to machine breakdowns on daily basis as a maintenance shift Incharge. Further more, I am into spare parts procurement and planning, with close association with SAP HANA for planning, compliance and asset optimisation.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

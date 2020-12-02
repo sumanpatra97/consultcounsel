@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SHREEPARNA NAG</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'shree.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Shreeparna Nag</h3>
+                <h3 class="pox">Classical dancer & Software techie</h3>
+                <h3 class="pox">nag.shreeparna@gmail.com</h3>
+                <p class="kk pox">
+                    Shreeparna is a tech graduate currently working in Deloitte for 2 years. She hails from Odisha currently residing in Hyderabad She's is a trained classical dancer, tapping her feet since childhood.
+                    She had been part of National and International performances and competitions.
+                    She's a people's person, always ready to help or counsel in whatever way she can. Please feel free to reach out to her.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

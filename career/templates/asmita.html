@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ASMITA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'asmita.jpg'%}" width="100%" height="22%"><br>
+                <h3 class="pox">Asmita</h3>
+                <h3 class="pox">Gardener, Cook & Fitness Artist</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Professionally, I am a Business Analyst who is keen on Fitness and Arts. I believe that Health is the most precious asset of every human being and everyone should learn how to earn a healthy lifestyle. Gym is the temple for me where I meditate. I often share my workout videos and healthy recipes on my social media accounts to motivate people.
+                    I run an online customized handmade jewelry business "Anjali Jewellery Creations" to employ and empower socially and economically backward women.
+                    The lockdown due to Covid-19 made me start my long-awaited cooking channel in YouTube "Annie Potter's Kitchen", which is beneficial for the young generation.
+                    My friends consider me as an one-stop platform for all the household chores. Be it cooking, gardening, crafting or repairing switchboards and connections, I could be a solution. I love to hold the paint brush and express my thoughts on the canvas. I grow organic tomatoes, bell peppers and herbs in my balcony and air purifying plants in my bedroom. I often share videos on how to take care of common plants and herbs in my social media accounts.
+                    I believe that sharing positive thoughts among people would definitely make a positive difference in their lives.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

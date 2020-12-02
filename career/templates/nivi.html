@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>NIVEDITA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'nivi.jpg'%}" width="100%" height="18%"><br>
+                <h3 class="pox">Nivedita Sandireddy</h3>
+                <h3 class="pox">Yoga Expert</h3>
+                <h3 class="pox">nivinivi222@gmail.com</h3>
+                <p class="kk pox">
+                    My first yoga class took place in Mysore, an auspicious beginning for certain. I am on the path of our teaching with cumulative experience of 7 years. I have begun using yoga as a therapy in 2017 after being certified to teach through the SVYASA yoga University and started our own studio named Vishuddhi yoga studios. Vishuddhi yoga studios helped many people from Vishuddhi Yoga Studio to catch glimpses of what we might call the vastness. We sometimes saw people being physically healthy and authentically happy after our classes. So we knew that it was possible and anything could happen through Yoga.
+                    Our Vishuddhi Yoga Studio Service History:
+                    1. Conducted yoga classes of beginner and intermediate level for members.
+                    2. Guided participants through encouraging and effective mind and body practices.
+                    3. Worked on one to one with students to nurture their motivation and heal their health issues by providing personal classes.
+                    4. Experienced in corporate sessions at IT companies like Infosys, Genpact & ZWC softwares.
+                    5. Taken guest sessions to school students on importance of yoga  and meditation.
+                    we have shared our classes online as per the requirement of the clients.
+                    Vishuddhi Yoga classes can be witnessed at our social handles Facebook and Insta by the name “Vishuddhi Yoga studio”. We were still on our way to attain mystical calmness. We were simultaneously the forcer and forced. This sense of inner-directed self-sufficiency made us to attend training workshops to ensure our teachings were on trend with the latest most up to date findings.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

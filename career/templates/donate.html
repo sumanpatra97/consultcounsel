@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DONATE</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form method="POST" action="paynext" class="form-group">
+                    {% csrf_token %}
+                    <h4 class="kk">Enter your information correctly</h4>
+                    <label for="username"><h5 class="tox">Enter your name: </h5></label>
+                    <input type="text" name="username" required class="form-control">
+                    <label for="password"><h5 class="kk">Enter your emailaddress: </h5></label>
+                    <input type="text" name="email" required class="form-control">
+                    <label for="plan"><h5 class="kk">Enter amount: </h5></label>
+                    <input type=text name="amount" class="form-control"><br>
+                    <button type="submit"required class="btn btn-success">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

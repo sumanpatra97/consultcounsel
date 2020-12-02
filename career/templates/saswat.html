@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SASWAT</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'saswat.jpg'%}" width="100%" height="38%"><br>
+                <h3 class="pox">Saswat Kumar Parida</h3>
+                <h3 class="pox">Career and Business Management Expert</h3>
+                <h3 class="pox">um20111@stu.ximb.ac.in</h3>
+                <p class="kk pox">
+                    Having worked earlier in a Direct Selling Organization as a "Business Associate" (part-time) during my graduation and in my own Startup "Archify & Buildify Constructions Pvt. LTD. " after graduation, I realized that there are more things I want to explore and nail, specially in the fields of Management, business, marketing and strategy.
+                    This paved my way towards Xavier Institute of Management, Bhubaneswar as a MBA grad.
+                    Throughout my journey I have seen people getting confused about a career in Management and Business , because of the pre notions that they need talent and skills to nail it. My goal is to guide them breaking the status-quo and help them explore the unexplored.
+                </p>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+  {% endblock content %}
+</body>
+</html>

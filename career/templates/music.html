@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>MENTORS</title>
+</head>
+<body>
+ {% block content %}
+    <div class="container-fluid lll">
+        <h2 class="pox">&#9829;OUR MENTORS&#9829;</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="{% static 'abhya.JPG'%}" width="100%" height="50%"><br><br>
+                <h3 class="kk">Abhay</h3>
+                <h3 class="kk">Freelance Guitarist & Electronic music producer</h3>
+                <a href="abhya"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'anupam.jpg'%}" width="100%" height="50%"><br><br>
+                <h3 class="kk">Anupam</h3>
+                <h3 class="kk">Sound Engineer, Music Producer & Drummer</h3>
+                <a href="anupam"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'manan.jpg'%}" width="100%" height="50%"><br><br>
+                <h3 class="kk">Manan</h3>
+                <h3 class="kk">Professional Guitarist</h3>
+                <a href="manan"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'radhakant.jpg'%}" width="100%" height="50%"><br><br>
+                <h3 class="kk">Radhakant</h3>
+                <h3 class="kk">Singer</h3>
+                <a href="radhakant"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'shashank.jpg'%}" width="100%" height="60%"><br><br>
+                <h3 class="kk">Shashank</h3>
+                <h3 class="kk">Classical flute player</h3>
+                <a href="shashank"><h4>Read more</h4></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'rishi.jpg'%}" width="100%" height="50%"><br><br>
+                <h3 class="kk">Rishi</h3>
+                <h3 class="kk">Guitar Player</h3>
+                <a href="rishi"><h4>Read more</h4></a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

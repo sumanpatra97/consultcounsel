@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>KRUTEE</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'krutee.jpg'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Krutee Mishra</h3>
+                <h3 class="pox">Odissi Dancer</h3>
+                <h3 class="pox">kruteemishra98@gmail.com</h3>
+                <p class="kk pox">
+                    Odissi has been a part of my life since I was 4 years old . Back then I understood nothing , but my parents
+                    figured out this was the only class I was willing to attend happily . With continuous practice for 16+ years ,
+                    under Smt. Pranati Mohanty , I completed my graduation with Distinction in Odissi from Chandigarh
+                    University in the year 2014 . Post my graduation I have been a part of various workshops , performed at
+                    multiple occasions , carrying forward the legacy I learnt . An Architect by profession who enjoys handling
+                    space with grace and fluidity .
+                </p><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

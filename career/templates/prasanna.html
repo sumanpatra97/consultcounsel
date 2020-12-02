@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PRASANNA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'prasanna.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Prasanna</h3>
+                <h3 class="pox">Oracle Developer, Quiling & Thread Artist.</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Currently I’m working on a oracle retail project for a us based client. Oracle retail is one of the widely spread technology being used all over the world. This system handles and tracks every transaction from getting the product from the product being ordered from the supplier till the product reaches the customer either by online and store.
+                    We handles the orders , allocations , product transfers , promotions pretty much everything that could associate with a product.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

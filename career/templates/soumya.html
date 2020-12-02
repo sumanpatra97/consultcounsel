@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SOUMYA</title>
+</head>
+<body>
+   {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'soumya.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Sushree Soumya</h3>
+                <h3 class="pox">Masters in Business Administration & Artist</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Fascinated with the beauty all around her, she started painting at the age of 3 and never stopped after that. She  likes to try various art mediums, and experiment with different thoughts and ideas.
+                    Nature is her muse, and her brush is her wand. She believes anyone can pick up a brush and paint their world the colour they want.
+                    Currently, she is pursuing her MBA. She is looking forward to building a community where everyone can draw and paint their imagination and develop art as a hobby as well as a stress-burster!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

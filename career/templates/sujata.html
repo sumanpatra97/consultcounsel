@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SUJATA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'sujata.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Sujata Priyadarshini Jena</h3>
+                <h3 class="pox">Personal Mentor, writer & Astrophysict</h3>
+                <h3 class="pox">sujatapriyadarshinijena@gmail</h3>
+                 <h3 class="pox">.com</h3>
+                <p class="kk pox">
+                    I am currently working as an IT professional. Whenever I am free ,I love to watch videos on astrophysics and do some research on that through internet ofcourse,as of now . And in my free time ,
+                    I love to write blogs on several topics , sometimes on the on-going scenarios or sometimes on some random stuffs .
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ADITYA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'aditya.jfif'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Aditya Oli</h3>
+                <h3 class="pox">Devops engineer</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Senior Systems Engineer (Infosys Ltd. Contract)
+                    Vodafone New Zealand (SME)
+                    IBM ICP, IBM API Connect, Kubernetes management from Operations standpoint, Linux shell scripting, python and selenium scripting, etc.
+                    AWS (CFT, CLI and UI) Lambda, S3Bucket, SNS, API Gateway, Cloud-Watch, etc.
+                    Innovative automation for the deployment of micro services to the AWS API
+                    Gateway using python and AWS CLI, Grafana, Splunk, Kibana, Dynatrace.
+                    Systems Engineer (Infosys Ltd.)
+                    Vodafone UK (Software Developer)
+                    Worked on Agile Model, developing micro services in spring boot, JUnit testing
+                    with TDD, BDD with Serenity and JBehave, code deployment using Jenkins.
+                    Postman collection and performance, load test scripting for API management.
+                    Working on API.ai, Amazon Web Services, Developing Chatbots, Automated
+                    deployment using Jenkins, Agile SAFe, SONAR, ECLEMMA, JIRA, VSTS, Git.
+                    Providing a sandboxed solution using APIs for untrusted code execution.
+                    Creating Interactive UIs and websites with HTML5,
+                    CSS3, JavaScript, JQuery. Designing Posters, banners, certificates, emails in
+                    Adobe Photoshop for the Zero Bench team.
+                    Software Engineering Intern
+                    Infosys Ltd.
+                    Designed a travel management platform using C#.Net MVC platform. User
+                    friendly front end designed in HTML5,CSS3,Bootstrap, Javascript, PHP, JQuery.
+                    Software Engineering Intern
+                    RWX Technology
+                    Implemented tracking and predicting the next positions of an object in a static
+                    video using the Kalman Filter using MATLAB
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

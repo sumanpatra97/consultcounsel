@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>THANKYOU</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><br><br>
+                <h5 class="pox">THANK YOU FOR YOUR FEEDBACK.YOU WILL RECEIVE A EMAIL FROM US</h5>
+                <h5 class="pox">WE WILL REVIEW IT.WE WILL REACH YOU IF REQUIRED.</h5>
+                <a href="/"><h5 class="pox"><p class="pox tox">Click here to go home</h5></a><br><br><br>
+            </div><br>
+        </div>
+    </div>
+    {% endblock content%}
+</body>
+</html>

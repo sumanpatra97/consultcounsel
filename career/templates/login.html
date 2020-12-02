@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>LOGIN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="pox">Sign-in your account here</h4>
+                <form class="form-group" action="login" method="POST">
+                    {% csrf_token %}
+                    {%for i in fm%}
+                    <h5 class="kk">{{ i.label }}</h5>
+                    <h5 class="kk">{{ i }}{{i.errors|striptags}}</h5>
+                    {%endfor%}
+                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                </form>
+                <h5 class="kk">New to site?</h5><a href="signup"><h5 class="kk">Creat your account</h5></a>
+                <h5 class="kk"><a href="passwordchange">forgot password</a></h5>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

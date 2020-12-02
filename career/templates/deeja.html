@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DEEJA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'deeja.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Deeja Chhabra</h3>
+                <h3 class="pox">Sap consultant</h3>
+                <h3 class="pox">deejachhabra@gmail.com</h3>
+                <p class="kk pox">
+                    SAP Consultant,
+                    Infosys Ltd. June 2018-Present
+                    Infosys Limited is an Indian Information Technology company that provides global business
+                    consulting and information technology services. Infosys helps clients in 45 countries to create
+                    and execute different strategies for their digital transformation.
+                    SAP Consultant in Basis and ABAP
+                    Extensive knowledge of SAP Basis for effective administration, SAP GUI, and client server architecture.
+                    actively monitor systems to ensure they are tuned and running.
+                    Extensive knowledge of SAP Hana studio to administer SAP Hana systems.
+                    worked on the projects of Advanced Business Application Programming (ABAP) to develop
+                    multiple enterprise software program i.e. SAP program modules especially Smart Forms
+                    Hands on experience on Python, Object Oriented Programming, Data Structures and DBMS.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

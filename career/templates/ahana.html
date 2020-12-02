@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>AHANA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'aahana.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Ahana Chand</h3>
+                <h3 class="pox">Illustrator & Masters in VLSI</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    Making illustrator always makes me happy. I make illustrators in Adobe illustrator. I can help you with basics. I am still learning. I am looking forward to help you all with whatever knowledge I have.
+                    Right now I am doing Mtech in VLSI. I can also help you in case of any query you have in VLSI.
+                </p><br><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

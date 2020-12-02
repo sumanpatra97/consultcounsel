@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SONI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'soni.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Soni Pandey</h3>
+                <h3 class="pox">Healthcare expert</h3>
+                <h3 class="pox">sonipandey2799@gmail.com</h3>
+                <p class="kk pox">
+                    This is Soni Pandey, graduate in B pharmacy, with  keen interests in research under human anotomy and physiology, epidemiology, disease management, drug development and healthcare management.
+                    Have experience in Clinical research, pharmacovigilance, pharmaceutical industry.
+                    Currently working as a Health associate in Wipro.
+                    Also, a content and research writer under healthcare sectors.
+                    Can provide guidance, in the healthcare stream being subjective, career, psychological as required adaptivly.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

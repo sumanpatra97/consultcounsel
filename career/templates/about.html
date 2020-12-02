@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ABOUTUS</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="kk pox">ABOUT US</h3>
+                <h5 class="kk">We bring you the best consulting and counselling services irrespective of  field with the help of renowned professionals in that particular concerned area...
+                We have forum section in which you can put up your question relating to any domain which will be answered by our highly trained mentors in the above said domain for FREE.
+                You can avail best of our services by becoming premium member and avail the facilities provided by us via proficient trainers in a meagre amount.
+                You can become a mentor to help people and guide them in your subject of hold by earning a good amount.
+                There is a donation section where we will use your givings to people who are part of our services and are deprived monetarily.
+                Kindly reach out to us via clicking on contact section and clarify your doubts.
+                Please do use feedback section for any complaints/suggestions/comments, which will help us improve further.</h5>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6 pox"><br>
+                        <img src="{% static 'suman.jpg'%}" width="300" height="300"><br>
+                        <h3 class="kk pox">Associate at Wipro and software developer</h3>
+                        <a href="read/suman"><h4>Read more</h4></a>
+                    </div>
+                    <div class="col-sm-6 pox"><br>
+                        <img src="{% static 'BHANU.JPG'%}" width="300" height="300"><br>
+                        <h3 class="kk pox">Engineer at Infosys & Actor</h3>
+                        <a href="read/bhanu"><h4>Read more</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

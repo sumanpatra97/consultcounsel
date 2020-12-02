@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>BHARATENDU</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'bhartendu.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Bharatendu Panda</h3>
+                <h3 class="pox">Digital Art Maker</h3>
+                <h3 class="pox">bharatendupanda@gmail.com</h3>
+                <p class="kk pox">
+                    I have been drawing since I was 4 years old. Previously I was on drawing with my pencil colours and markers. For the past 3 years, I have been drawing digitally. I have used multiple tools, hardwares and softwares for drawing. I have used a wacom digital tablet and currently using Android tablets.
+                    I have working knowledge in Photoshop and multiple drawing tools such as Krita and Autodesk Sketchbook.
+                    I have a YouTube channel for Art that I have started recently and my Instagram contains almost 300 of my artworks.
+                    My field of expertise includes digital art, pencil colours, markers and ink pens. I have been fortunate to win multiple awards for my drawings and creativity though out my life. I can guide you with basics of drawing and cartooning and how you can easily approach digital art.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

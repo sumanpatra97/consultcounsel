@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ALBIN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'albin.jpg'%}" width="100%" height="45%"><br>
+                <h3 class="pox">Albin Vayattattil</h3>
+                <h3 class="pox">Master in civil engineering</h3>
+                <h3 class="pox">albinvayattattil037@gmail.com</h3>
+                <p class="kk pox">
+                    GATE 2020 qualified with AIR 2977
+                    First,`energy efficient dream home’,hub level organized by IEEE and Energy management Centre,Kerala
+                    Runner up,’cadd master’ of national level technical event ‘abhiyanthriki’ by Rajagiri school of engineering and technology,2017
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

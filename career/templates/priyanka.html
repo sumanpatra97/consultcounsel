@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>Priyanka</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'priynka.jpg'%}" width="100%" height="50%"><br>
+                <h3 class="pox">Priyanka</h3>
+                <h3 class="pox">SAP ABAP/BODS Developer</h3>
+                <p class="kk pox">
+                    SAP is the ERP system used by companies to manage their business. ABAP is the programming language used by SAP. And BODS is the ETL tool used for data migration.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PALLAVI</title>
+</head>
+<body>
+{% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'palavi_del.jpg'%}" width="100%" height="40%"><br>
+                <h3 class="pox">Pallavi</h3>
+                <h3 class="pox">Software designer at DELL</h3>
+                <h3 class="pox">pallavis465@gmail.com</h3>
+                <p class="kk pox">
+                    This is Pallavi Satpathy.I am working for Dell India R&D after completing my MTech in Computer Science from BITS Pilani.Feel free to reach out to me if you need any help regarding Masters in Engineering in India(preparation,advantages etc.) or with campus placements preparation for IT companies.Looking forward to help you.
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

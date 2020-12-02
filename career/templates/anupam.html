@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">%}">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ANUPAM</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'anupam.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Anupam Panda</h3>
+                <h3 class="pox">Sound Engineer, Music Producer & Drummer</h3>
+                <h3 class="pox">anupamp67@gmail.com</h3>
+                <p class="kk pox">
+                    Hello , i am Anupam Panda , a Drummer turned Sound Engineer and Music Producer ,
+                    i started my career as a Drummer/Drums Teacher playing with bands of different genres and teaching at 2 places including my own school Harmony School of Music ,
+                    its been 9 years i have been teaching and mentoring to students of different age groups ranging from 5 to 60 years ,
+                    Till date i have played with more than 20 bands , played Drums for more than 150 tracks As well as i have taught drums to more than 100 students at places all over india ,
+                    I did my Sound Engineering degree from Seamedu School of Pro-Expressionism , Pune , which further enabled me to explore my field by taking part in
+                    Live sound setups of bands , performing live multitrack recordings , producing music , composing songs etc , its been a really wonderful journey of learning , teaching , performing and making music , and
+                    i look forward to guide you through this beautiful path.
+                </p><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

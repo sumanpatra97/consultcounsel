@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>CONTACT</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="pox">CONTACT US:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="kk pox">&#8594;Technical support</h3>
+                <h3 class="kk pox">gmail:sumanpatra68@gmail.com</h3>
+                <h3 class="kk pox">mobile:9337569167</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="kk pox">&#8594;Other support:</h3>
+                <h3 class="kk pox">gmail:bhanup997@gmail.com</h3>
+                <h3 class="kk pox">mobile:7205900207</h3>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

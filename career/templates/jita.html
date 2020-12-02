@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>JITA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'jita.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Jita raharaj</h3>
+                <h3 class="pox">MBA(HR) & Associate in CSIR-IMMT</h3>
+                <h3 class="pox">uh19026@xustudent.edu.in</h3>
+                <p class="kk pox">
+                    Currently Pursuing MBA in Human Resource Management at XIMB, Bhubaneswar, with a work experience of around 2 years in the R&D and IT industry, and an under-graduate degree in Metallurgical and Material Science Engineering from VSSUT, Burla.
+                    Work Experience:
+                    Accenture Solutions Private Limited-Application Development Associate
+                    CSIR-IMMT (RRL)- Project Research Associate
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>TRILOCHAN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'trilochan.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Trilochan</h3>
+                <h3 class="pox">.NET Developer, IOT & Blockchain Expert</h3>
+                <h3 class="pox">trilochan.patri321@gmail.com</h3>
+                <p class="kk pox">
+                    I am a .Net developer at NTT data. I have a year of experience in .Net. previously I worked at Amazon as an Hr associate for 3 months. I have written various govt exams which includes cds NDA and civils, got selected for ssb twice. I have written CAT twice and secured 86 percentile which wasn't enough to get into a good college.
+                    I have written a research paper on predictive data analysis using data mining which was published in an international journal (i-manager).
+                    I have worked for my own startup for 6 months (abhisamagri) and left because of some issues so have a little experience in business strategies and building business and I have experience in stock market as well.
+                    In my college I was the professional development director which helped me to improve my skills bieng a leader. I have lead few events and later became a board member of my college  and conducted fests for two consecutive years.
+                    I have knowledge on IOT and did 6 projects out of which a projects were selected for international blockchain conference and we had a chance to present it there.
+                    I was an active member in NSS. I could represent our college in national debate competition and we won second.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

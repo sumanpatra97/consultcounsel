@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>DEEKSHITH</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'deekshith.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Deekshith Patel</h3>
+                <h3 class="pox">Masters in Electronics, EV Machines & Signals</h3>
+                <h3 class="pox">deeksi.dasari@gmail.com</h3>
+                <p class="kk pox">
+                    Myself Deekshith Kumar attained Masters by research from AMRITA VISHWA VIDYAPEETHAM, COIMBATORE in the branch of power electronics.
+                    My interests are Electric vehicles and machines, Signal processing techniques.
+                    I had qualified GATE in 2018 from the stream of EE
+                    My research paper was published in ICAPSM 2020.
+                    I'm an optimist person looking for wide opportunities for sharing my thought related to the stream of electrical without any hesitation.
+                </p><br><br><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

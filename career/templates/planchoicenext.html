@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PLAN</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="pox">STEP 2 OF 3</h3>
+                <p class="kk pox">CHOOSE YOUR PLAN</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pox"><br>
+                <p class="kk">Plan-1</p>
+                <p class="kk">1week</p>
+                <p class="kk">Price:100</p>
+                <p class="kk">Offer Price:75</p>
+                <p class="kk">1 video call</p>
+                <p class="kk">1 audio call</p>
+                <p class="kk">followup call</p>
+                <a href="step3"><button class="btn btn-dark">SELECT PLAN</button></a>
+            </div>
+            <div class="col-sm-4 pox"><br>
+                <p class="kk">Plan-2</p>
+                <p class="kk">1month</p>
+                <p class="kk">Price:200</p>
+                <p class="kk">Offer Price:150</p>
+                <p class="kk">Weekly video call</p>
+                <p class="kk">Weekly followup call</p>
+                <p class="kk">Material support</p>
+                <a href="step3"><button class="btn btn-dark">SELECT PLAN</button></a><br>
+            </div>
+            <div class="col-sm-4 pox"><br>
+                <p class="kk">Plan-3</p>
+                <p class="kk">3month</p>
+                <p class="kk">Price:600</p>
+                <p class="kk">Offer Price:450</p>
+                <p class="kk">Weekly video call</p>
+                <p class="kk">Weekly followup call</p>
+                <p class="kk">24*7 support</p>
+                <p class="kk">Material support</p>
+                <a href="step3"><button class="btn btn-dark">SELECT PLAN</button></a><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

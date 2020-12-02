@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>PRIYNKA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'priynka_brahama.jpg'%}" width="100%" height="20%"><br>
+                <h3 class="pox">Priynka Brahama</h3>
+                <h3 class="pox">Quality assurance, Auditing & Customer Management</h3>
+                <h3 class="pox">priyanka.brahma2022@sims.edu</h3>
+                <p class="kk pox">
+                    Currently Pursuing Master of Business Administration (1st Year, MBA 20-22) from Symbiosis Institute of Management Studies with a prior professional
+                    experience of 2 years 9 months in process control, Quality assurance and Management auditing, customer experience management.
+                    BHARAT ALUMINIUM COMPANY LIMITED, Vedanta Resources Plc->
+                    Associate Manager, Lead Customer technical Support Aug 2017-May 2020
+                    o Customer requirement benchmarking and standardization.
+                    o Sales and production Planning, Quality assurance and handover of finished goods ~30,000MT/month.
+                    o Customer complaint redressal, customer interaction policy making.
+                    o New product development.
+                    o Liaisoning between marketing and production team.
+                    Assistant Manager, Process Control In charge (Finishing line Area)
+                    o Men, material, machineries, stock and constraint planning.
+                    o Internal Auditor IATF, OHSAS, Asset Optimization (PO module).
+                    o Industrial relationship management with internal and External Business Stakeholders including Management, locals, employees and Union.
+                    o Development and execution of Quality Improvement Workshops, Quality circles etc.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>RICHA</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'richa.jpg'%}" width="100%" height="30%"><br>
+                <h3 class="pox">Richa Bihari</h3>
+                <h3 class="pox">Masters in Architecture & Home Baker</h3>
+                <h3 class="pox"></h3>
+                <p class="kk pox">
+                    I’m Richa Bihari. I graduated in 2019 with a Bachelors in Architecture from VSSUT, Burla. Currently, I am pursuing my Masters in Architecture (Architectural history and theory) from CEPT University, Ahmedabad. I am also a home baker, travel enthusiast, nature lover and a book freak.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>ABHINASH</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'abhinash.jpg'%}" width="100%" height="25%"><br>
+                <h3 class="pox">Abhinash Padhan</h3>
+                <h3 class="pox">Creative Director / Video Editor </h3>
+                <h3 class="pox">abinashpadhan1294@gmail.com</h3>
+                <p class="kk pox">
+                    ▪ Promotional Documentary for TATA TRUSTS in 2017.
+                    ▪ Documentary Film ‘Gunjaran 1 and 2’ for Sikshasandhan an NGO in Odisha.
+                    ▪ Video Report on ‘Situational Analysis of PVTGS of Odisha’ for CDWS and Unicef in 2019.
+                    ▪ Documentary film ‘Lighting their Dream’ for Indo Russian cinema Federation in 2018.
+                    ▪ Documentary film on ‘Star School Program’ and ‘Foster Care Project’ for YCDA an NGO in Odisha
+                    ▪ Documentary Film: ‘They call me Bideshini’ for Video Volunteer and US Embassy for Change Chitra NGO
+                    ▪ Documentary film ‘God’s own People’ for Roshini Foundation Sambalpur.
+                    ▪ Documentary film ‘Sakuntala’ for Being Human 11 Foundation Odisha.
+                    ▪ Documentary film on ‘Sanksar Kendra’ of VSSUT in 2015.
+                    ▪ Documentary film ‘Arun A Life of Inspiration’.
+                    ▪ Documentary film ‘Arun the pioneer of student’s politics Odisha’.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

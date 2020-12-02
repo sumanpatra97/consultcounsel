@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <title>SALONI</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <img src="{% static  'saloni.jpg'%}" width="100%" height="35%"><br>
+                <h3 class="pox">Saloni Dhall</h3>
+                <h3 class="pox">Article Writer & Blogger</h3>
+                <h3 class="pox">salonidhall80@gmail.com</h3>
+                <p class="kk pox">
+                    Collaborating peacefully with the Indian Educational System , she  has completed her schooling and Intermediate from DAV, Talcher and is a graduate from VSSUT, Burla. An engineer at Infosys by profession and a writer by passion has scribbled some thoughtful articles as a blogger.
+                    She is an amateur in the game of life, propagating thoughts through words indulged in self-emmissive emotions. As an ardent follower of stories that speak, she tends to reciprocate the same.
+                </p>
+            </div>
+        </div><br>
+    </div>
+    {% endblock content %}
+</body>
+</html>

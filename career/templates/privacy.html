@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="{% static 'COUNC.jpg' %}">
+    <title>PRIVACY</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container-fluid lll">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 pox">
+                <h3>Personal data:</h4>
+                <h5 class="kk">We do not share your personal informations like email and phone no with anyone.your data security is our first priority.</h5>
+                <h3>Payment related data:</h4>
+                <h5 class="kk">We donot take your your card information and upi id during payment.When you pay via razorpay or paytm,it is completely encrypted.
+                so you donot need to worry about your card detail.it is safe.</h5>
+                <h4 class="kk">We are always there to support you.if you feel like you need any clarity,you can contact us</h4>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>
